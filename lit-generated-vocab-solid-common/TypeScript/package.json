@@ -1,0 +1,37 @@
+{
+  "name": "@inrupt/lit-generated-vocab-solid-common-ts",
+  "version": "0.3.3",
+  "description": "Bundle of vocabularies that includes the following:\n\n  solid-meta-server-creational: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by Solid servers at server creation time.\n\n  solid-meta-server-runtime: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by Solid servers at server creation time.\n\n  solid-meta-client: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by Solid clients.\n\n  solid-meta-acl: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by the Solid ACL system.\n\n  solid-service-common: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) commonly used across Solid services.\n\n  acl: \n\n  solid: \n\n  ws: This extension adds predicates making explicit some implicit knowledge in the Workspace ontology.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "module": "./dist/index.es.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "author": {
+    "name": "@inrupt/lit-artifact-generator",
+    "url": "https://github.com/inrupt/lit-artifact-generator-js"
+  },
+  "contributors": [
+    {"name": "Pat McBennett"},
+    {"name": "https://solid.zwifi.eu/profile/card#me"}
+  ],
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inrupt/solid-rdf-vocab.git"
+  },
+  "dependencies": {
+    "@inrupt/lit-vocab-term": "^0.3.2",
+    "@rdfjs/data-model": "^1.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  ,
+    "rollup": "^2.7.3",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.3"
+  }
+}

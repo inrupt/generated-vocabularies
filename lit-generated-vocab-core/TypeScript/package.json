@@ -1,0 +1,38 @@
+{
+  "name": "@inrupt/lit-generated-vocab-core",
+  "version": "0.3.3",
+  "description": "Bundle of vocabularies that includes the following:\n\n  lit_core: The LIT Core Ontology. The LIT is intended to be a collection of utility libraries to ease the\n adoption of RDF for developers.\n\n  lit_consent: Consent vocabulary defining LIT-specific terms, especially terms that provide context\n\n  lit-request-body: The Solid vocabulary providing terms for a request body (in this case, we&#x27;re really just\n providing the Named Graph details (e.g. the IRI for the named graph itself), since the contents of a request body are\n completely arbitrary.\n\n  lit-meta-client: The LIT vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by LIT clients at runtime.\n\n  lit-meta-shacl: The LIT vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) usable by SHACL validation engines at runtime.\n\n  lit-meta-server-creational: The LIT vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by LIT servers at server creation time.\n\n  lit-meta-server-runtime: The LIT vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by LIT servers at server runtime.\n\n  met: The LIT Metrics Ontology contains vocab terms to represent metric statistics",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "module": "./dist/index.es.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "author": {
+    "name": "@inrupt/lit-artifact-generator",
+    "url": "https://github.com/inrupt/lit-artifact-generator-js"
+  },
+  "contributors": [
+    {"name": "PatMcB"},
+    {"name": "Pat McBennett"},
+    {"name": "Jarlath Holleran"}
+  ],
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inrupt/lit-rdf-vocab.git"
+  },
+  "dependencies": {
+    "@inrupt/lit-vocab-term": "^0.3.2",
+    "@rdfjs/data-model": "^1.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  ,
+    "rollup": "^2.7.3",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.3"
+  }
+}
