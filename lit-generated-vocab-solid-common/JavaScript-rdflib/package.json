@@ -1,0 +1,32 @@
+{
+  "name": "@inrupt/lit-generated-vocab-solid-common-rdflib",
+  "version": "0.3.2",
+  "description": "Bundle of vocabularies that includes the following:\n\n  solid-meta-server-creational: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by Solid servers at server creation time.\n\n  solid-meta-server-runtime: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by Solid servers at server creation time.\n\n  solid-meta-client: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by Solid clients.\n\n  solid-meta-acl: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) used by the Solid ACL system.\n\n  solid-service-common: The Solid vocabulary providing terms (e.g. classes, properties and text strings (e.g.\n informative labels or error messages) commonly used across Solid services.\n\n  acl: \n\n  solid: \n\n  ws: This extension adds predicates making explicit some implicit knowledge in the Workspace ontology.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config ./config/webpack.dev.config.js",
+    "prod": "webpack --config ./config/webpack.prod.config.js"
+  },
+  "author": {
+    "name": "@inrupt/lit-artifact-generator",
+    "url": "https://github.com/inrupt/lit-artifact-generator-js"
+  },
+  "contributors": [
+    {"name": "Pat McBennett"},
+    {"name": "https://solid.zwifi.eu/profile/card#me"}
+  ],
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inrupt/solid-rdf-vocab.git"
+  },
+  "dependencies": {
+    "rdflib": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
